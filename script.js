@@ -18,11 +18,13 @@ class Stopwatch extends React.Component {
     }
 
 	reset () {
-        this.setState ({
-            minutes: 0,
-            seconds: 0,
-            milliseconds: 0
-        });
+        if (!this.state.running) {
+            this.setState ({
+                minutes: 0,
+                seconds: 0,
+                milliseconds: 0
+            });
+        }
     }
 
     step () {

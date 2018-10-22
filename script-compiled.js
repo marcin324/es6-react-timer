@@ -40,11 +40,13 @@ var Stopwatch = function (_React$Component) {
     }, {
         key: 'reset',
         value: function reset() {
-            this.setState({
-                minutes: 0,
-                seconds: 0,
-                milliseconds: 0
-            });
+            if (!this.state.running) {
+                this.setState({
+                    minutes: 0,
+                    seconds: 0,
+                    milliseconds: 0
+                });
+            }
         }
     }, {
         key: 'step',
