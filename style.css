@@ -1,0 +1,41 @@
+* {
+	box-sizing: border-box;
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	height: 100vh;
+	color: #BBBBBB;
+	background: #607D8B;
+}
+
+#app {
+	height: 100%;
+}
+
+.container {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	line-height: 8em;
+}
+
+.controls{
+	width: 550px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.button {
+	color: #BBBBBB;
+	text-decoration: none;
+	font-size: 4em;
+	margin: 0;
+}
+
+.stopwatch {
+	font-size: 6em;
+}
